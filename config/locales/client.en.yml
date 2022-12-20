@@ -1,0 +1,4 @@
+en:
+  js:
+    discourse_announcement_pm:
+      composer_toggle_label: "Prevent replies to this message"
