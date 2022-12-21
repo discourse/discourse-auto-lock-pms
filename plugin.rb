@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-# name: discourse-announcement-pm
-# about: Send a PM with restricted replies
+# name: discourse-auto-lock-pms
+# about: Adds a toggle to automatically lock PMs once they are sent
 # version: 0.0.1
 # authors: Discourse
-# url: https://github.com/discourse/discourse-announcement-pm
+# url: https://github.com/discourse/discourse-auto-lock-pms
 # required_version: 2.7.0
 
 register_asset "stylesheets/common/common.scss"
