@@ -9,7 +9,7 @@
 
 register_asset "stylesheets/common/common.scss"
 
-enabled_site_setting :discourse_announcement_pm_enabled
+enabled_site_setting :discourse_auto_lock_pms_enabled
 
 after_initialize do
   IS_ANNOUNCEMENT_FIELD = {

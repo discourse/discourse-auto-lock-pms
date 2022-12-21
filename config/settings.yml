@@ -1,4 +1,4 @@
 plugins:
-  discourse_announcement_pm_enabled:
+  discourse_auto_lock_pms_enabled:
     default: true
     client: true

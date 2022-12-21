@@ -4,7 +4,7 @@ require "rails_helper"
 
 describe Topic do
   before do
-    SiteSetting.discourse_announcement_pm_enabled = true
+    SiteSetting.discourse_auto_lock_pms_enabled = true
   end
 
   let(:admin) { Fabricate(:admin) }

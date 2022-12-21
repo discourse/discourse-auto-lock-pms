@@ -6,7 +6,7 @@ import pmTopicFixture from "../fixtures/pm-topic-fixture";
 acceptance("Announcement PM Toggle", function (needs) {
   needs.user();
   needs.settings({
-    discourse_announcement_pm_enabled: true,
+    discourse_auto_lock_pms_enabled: true,
   });
 
   needs.pretender((server, helper) => {
