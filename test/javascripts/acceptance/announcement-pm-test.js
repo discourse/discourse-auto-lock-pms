@@ -3,7 +3,7 @@ import { test } from "qunit";
 import { click, visit } from "@ember/test-helpers";
 import pmTopicFixture from "../fixtures/pm-topic-fixture";
 
-acceptance("Announcement PM Toggle", function (needs) {
+acceptance("Auto Lock PM Toggle", function (needs) {
   needs.user();
   needs.settings({
     discourse_auto_lock_pms_enabled: true,
