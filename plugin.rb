@@ -52,17 +52,4 @@ after_initialize do
     tc.record_change(IS_ANNOUNCEMENT_FIELD[:name], tc.topic.send(IS_ANNOUNCEMENT_FIELD[:name]), value)
     tc.topic.send("#{IS_ANNOUNCEMENT_FIELD[:name]}=".to_sym, value.present? ? value : nil)
   end
-
-  # Serialize to Topic
-  add_to_serializer(:topic_view, IS_ANNOUNCEMENT_FIELD[:name].to_sym) do
-    object.topic.send(IS_ANNOUNCEMENT_FIELD[:name])
-  end
-
-  # Preload the Field
-  add_preloaded_topic_list_custom_field(IS_ANNOUNCEMENT_FIELD[:name])
-
-  # Serialize to the topic list
-  add_to_serializer(:topic_list_item, IS_ANNOUNCEMENT_FIELD[:name].to_sym) do
-    object.send(IS_ANNOUNCEMENT_FIELD[:name])
-  end
 end
