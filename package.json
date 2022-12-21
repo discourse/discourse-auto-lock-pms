@@ -1,7 +1,7 @@
 {
-  "name": "discourse-announcement-pm",
+  "name": "discourse-auto-lock-pms",
   "version": "0.0.1",
-  "repository": "https://github.com/discourse/discourse-announcement-pm",
+  "repository": "https://github.com/discourse/discourse-auto-lock-pms",
   "author": "Discourse",
   "license": "MIT",
   "devDependencies": {
