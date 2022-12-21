@@ -1,4 +1,4 @@
 en:
   js:
-    discourse_announcement_pm:
+    discourse_auto_lock_pms:
       composer_toggle_label: "Prevent replies to this message"
