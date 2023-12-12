@@ -1,6 +1,6 @@
-import { acceptance, exists } from "discourse/tests/helpers/qunit-helpers";
-import { test } from "qunit";
 import { click, visit } from "@ember/test-helpers";
+import { test } from "qunit";
+import { acceptance, exists } from "discourse/tests/helpers/qunit-helpers";
 import pmTopicFixture from "../fixtures/pm-topic-fixture";
 
 acceptance("Auto Lock PM Toggle", function (needs) {
