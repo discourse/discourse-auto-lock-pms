@@ -12,10 +12,7 @@ register_asset "stylesheets/common/common.scss"
 enabled_site_setting :discourse_auto_lock_pms_enabled
 
 after_initialize do
-  AUTO_LOCK_FIELD = {
-    name: "auto_lock_pm",
-    type: "boolean",
-  }
+  AUTO_LOCK_FIELD = { name: "auto_lock_pm", type: "boolean" }
 
   register_topic_custom_field_type(AUTO_LOCK_FIELD[:name], AUTO_LOCK_FIELD[:type].to_sym)
 
