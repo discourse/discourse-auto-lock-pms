@@ -24,12 +24,12 @@ acceptance("Auto Lock PM Toggle", function (needs) {
   test("Toggle does not appear in topic composer", async function (assert) {
     await visit("/");
     await click("#create-topic");
-    assert.ok(!exists(".toggle-prevent-reply"), "toggle does not exist");
+    assert.notOk(exists(".toggle-prevent-reply"), "toggle does not exist");
   });
 
   test("Toggle does not appear in PM reply composer", async function (assert) {
     await visit("/t/161");
     await click(".topic-footer-main-buttons .create");
-    assert.ok(!exists(".toggle-prevent-reply"), "toggle does not exist");
+    assert.notOk(exists(".toggle-prevent-reply"), "toggle does not exist");
   });
 });
