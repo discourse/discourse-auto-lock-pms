@@ -59,9 +59,6 @@ after_initialize do
       tc.topic.send(DiscourseAutoLockPms::AUTO_LOCK_FIELD[:name]),
       value,
     )
-    tc.topic.send(
-      "#{DiscourseAutoLockPms::AUTO_LOCK_FIELD[:name]}=".to_sym,
-      value.present? ? value : nil,
-    )
+    tc.topic.send("#{DiscourseAutoLockPms::AUTO_LOCK_FIELD[:name]}=".to_sym, (value.presence))
   end
 end
