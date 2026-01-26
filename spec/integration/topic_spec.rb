@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "rails_helper"
-
 describe Topic do
   before { SiteSetting.discourse_auto_lock_pms_enabled = true }
 
